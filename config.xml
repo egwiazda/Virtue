@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "virtue.appedu.clouders.com"
+        versionCode = "1.0"
+        version     = "1.0" >
+
+	<name>App Edu</name>
+
+	<description>App de Ejemplo</description>
+
+	<author href="http://www.telefonica.com.ar" email="eduardo.gwiazda@telefonica.com">Edu</author>
+
+	<gap:platform name="android" />
+	<preference name="android-build-tool" value="gradle" />
+	<preference name="permissions" value="none"/>
+
+	<preference name="disallowOverscroll" value="true" />
+	<preference name="webviewbounce" value="false" />
+
+	<!-- PhoneGap plugin declaration -->
+	<plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<plugin name="cordova-plugin-network-information" source="npm" />
+	<plugin name="cordova-plugin-whitelist" source="npm" />
+	<plugin name="cordova-plugin-splashscreen" source="npm" />
+	<plugin name="cordova-plugin-device" source="npm" />
+	<plugin name="cordova-plugin-statusbar" source="npm" />
+	<plugin name="cordova-plugin-crosswalk-webview" spec="2.3.0" source="npm" />
+
+	<!-- Whitelist policy  -->
+	<access origin="*" />
+	<allow-intent href="*" />
+	<allow-navigation href="*" />
+
+	<!-- SplashScreen configuration -->
+	<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="FadeSplashScreenDuration" value="300" />
+	<preference name="ShowSplashScreenSpinner" value="false" />
+
+	<!-- Icons and Splashscreens declaration -->
+</widget>
